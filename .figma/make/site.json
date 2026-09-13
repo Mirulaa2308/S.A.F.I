@@ -1,0 +1,10 @@
+{
+  "description": "SAFI connects users with suitable government financial and educational loan schemes, offering personalized guidance and resources for informed decision-making.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
