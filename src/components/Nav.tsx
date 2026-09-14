@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from 'react'
 import { NavLink, useNavigate } from 'react-router'
 import { useLang, LANGUAGES, t } from '../context/LanguageContext'
+import safiLogo from '../assets/safi-logo.png'
 
 export default function Nav() {
   const { lang, setLang } = useLang()
@@ -38,15 +39,22 @@ export default function Nav() {
       style={{ background: '#0f1e3c', borderColor: 'rgba(255,255,255,0.1)' }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
-        {/* Brand */}
-        <NavLink to="/" className="flex items-center gap-2.5 shrink-0">
-          <div
-            className="w-8 h-8 rounded flex items-center justify-center text-xs font-bold font-sans-ui text-white"
-            style={{ background: '#0077b6' }}
-          >
-            SA
-          </div>
-          <span className="text-base font-bold text-white tracking-tight">SAFI</span>
+       {/* Brand */}
+        <NavLink
+          to="/"
+          aria-label="SAFI Home"
+          className="group flex items-center shrink-0 rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400"
+        >
+          <img
+            src={safiLogo}
+            alt="SAFI — Scheme Assistance & Financial Intelligence"
+            className="h-9 md:h-10 w-auto object-contain transition-all duration-300 group-hover:brightness-125 group-hover:drop-shadow-[0_0_12px_rgba(0,210,255,0.7)]"
+            style={{
+              mixBlendMode: 'screen',
+              filter: 'invert(1) hue-rotate(180deg)',
+            }}
+            draggable={false}
+          />
         </NavLink>
 
         {/* Desktop nav */}
