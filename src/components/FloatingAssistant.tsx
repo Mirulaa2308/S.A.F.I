@@ -78,7 +78,7 @@ export default function FloatingAssistant() {
             <path d="M4 4l12 12M16 4L4 16" stroke="white" strokeWidth="2" strokeLinecap="round" />
           </svg>
         ) : (
-          <span className="text-white font-bold text-xs font-sans-ui leading-tight text-center">SA<br />FI</span>
+          <span className="text-white font-bold text-xs font-sans-ui leading-tight text-center">SAFI</span>
         )}
       </button>
 
