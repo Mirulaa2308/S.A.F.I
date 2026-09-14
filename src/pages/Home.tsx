@@ -60,13 +60,7 @@ export default function Home() {
       >
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
           <div>
-            <div
-              className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-sans-ui mb-6 border"
-              style={{ borderColor: '#4a7fc1', color: '#90bbea', background: 'rgba(255,255,255,0.06)' }}
-            >
-              <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 inline-block" />
-              Smart India Hackathon 2026 · Problem Statement 26092
-            </div>
+            
 
             <h1 className="text-3xl lg:text-4xl leading-snug font-bold text-white mb-5">
               Find the right government scheme. Understand your options. Take the next step with confidence.
