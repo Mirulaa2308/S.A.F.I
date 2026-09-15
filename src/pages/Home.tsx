@@ -266,14 +266,8 @@ export default function Home() {
                 "SAFI does not replace official processes. It removes the barriers that prevent citizens from reaching them."
               </p>
             </blockquote>
-            <div className="flex flex-wrap gap-4">
-              {[{ v: '26092', l: 'Problem Statement ID' }, { v: 'SIH 2026', l: 'Smart India Hackathon' }, { v: 'MSJE', l: 'Ministry of Social Justice' }].map((b) => (
-                <div key={b.v} className="px-4 py-3 rounded-lg border text-center" style={{ borderColor: '#4a7fc1', background: 'rgba(255,255,255,0.05)' }}>
-                  <div className="text-2xl font-bold text-white">{b.v}</div>
-                  <div className="text-xs font-sans-ui" style={{ color: '#7aa5c8' }}>{b.l}</div>
-                </div>
-              ))}
-            </div>
+            
+            
           </div>
           <div className="space-y-4">
             {[
@@ -300,14 +294,7 @@ export default function Home() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-10 mb-12">
             <div className="col-span-2 md:col-span-1">
               <div className="flex items-center gap-2 mb-3">
-                <div className="w-8 h-8 rounded flex items-center justify-center text-xs font-bold font-sans-ui text-white" style={{ background: '#0077b6' }}>SA</div>
-                <span className="text-lg font-bold text-white">SAFI</span>
               </div>
-              <p className="text-xs font-sans-ui leading-relaxed mb-4" style={{ color: '#7aa5c8' }}>
-                Scheme Assistance &amp; Financial Intelligence<br />
-                Smart India Hackathon 2026 · Ministry of Social Justice &amp; Empowerment
-              </p>
-              <div className="text-xs font-sans-ui" style={{ color: '#4a5f82' }}>Problem Statement 26092</div>
             </div>
             {[
               { heading: 'Platform', links: [['Search Scheme', '/search'], ['Explore Schemes', '/schemes'], ['Financial Calculator', '/calculator'], ['Channel Partners', '/partners'], ['SAFI Assistant', '/assistant']] },
@@ -327,9 +314,7 @@ export default function Home() {
             ))}
           </div>
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-8 border-t" style={{ borderColor: 'rgba(255,255,255,0.08)' }}>
-            <p className="text-xs font-sans-ui" style={{ color: '#4a5f82' }}>
-              © 2026 SAFI · Smart India Hackathon · Ministry of Social Justice &amp; Empowerment, Government of India
-            </p>
+            
             <p className="text-xs font-sans-ui text-center" style={{ color: '#4a5f82' }}>
               SAFI is an information &amp; guidance platform. Not a loan originator, approver, or disbursement system.
             </p>
