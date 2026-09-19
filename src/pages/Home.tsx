@@ -60,7 +60,7 @@ export default function Home() {
       >
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
           <div>
-            
+
 
             <h1 className="text-3xl lg:text-4xl leading-snug font-bold text-white mb-5">
               Find the right government scheme. Understand your options. Take the next step with confidence.
@@ -266,8 +266,8 @@ export default function Home() {
                 "SAFI does not replace official processes. It removes the barriers that prevent citizens from reaching them."
               </p>
             </blockquote>
-            
-            
+
+
           </div>
           <div className="space-y-4">
             {[
@@ -291,11 +291,7 @@ export default function Home() {
       {/* ── Footer ── */}
       <footer className="px-6 pt-14 pb-8 border-t" style={{ background: '#0f1e3c', borderColor: 'rgba(255,255,255,0.08)' }}>
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-10 mb-12">
-            <div className="col-span-2 md:col-span-1">
-              <div className="flex items-center gap-2 mb-3">
-              </div>
-            </div>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-12">
             {[
               { heading: 'Platform', links: [['Search Scheme', '/search'], ['Explore Schemes', '/schemes'], ['Financial Calculator', '/calculator'], ['Channel Partners', '/partners'], ['SAFI Assistant', '/assistant']] },
               { heading: 'Schemes', links: [['NSFDC', '/schemes'], ['NBCFDC', '/schemes'], ['NSKFDC', '/schemes'], ['NMDFC', '/schemes'], ['State Corporations', '/schemes']] },
@@ -313,9 +309,8 @@ export default function Home() {
               </div>
             ))}
           </div>
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-8 border-t" style={{ borderColor: 'rgba(255,255,255,0.08)' }}>
-            
-            <p className="text-xs font-sans-ui text-center" style={{ color: '#4a5f82' }}>
+          <div className="pt-8 border-t text-center" style={{ borderColor: 'rgba(255,255,255,0.08)' }}>
+            <p className="text-xs font-sans-ui" style={{ color: '#4a5f82' }}>
               SAFI is an information &amp; guidance platform. Not a loan originator, approver, or disbursement system.
             </p>
           </div>
