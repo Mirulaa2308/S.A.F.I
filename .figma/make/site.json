@@ -1,5 +1,9 @@
 {
+  "title": "SAFI — Scheme Assistance & Financial Intelligence",
   "description": "SAFI connects users with suitable government financial and educational loan schemes, offering personalized guidance and resources for informed decision-making.",
+  "icons": {
+    "icon": "/favicon.png"
+  },
   "robots": {
     "index": false
   },
