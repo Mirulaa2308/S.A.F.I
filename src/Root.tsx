@@ -11,9 +11,12 @@ export default function Root() {
     <div className="min-h-screen" style={{ background: 'var(--background)', color: 'var(--foreground)' }}>
       <Nav />
       <main className="pt-16">
-        <Outlet />
+        <div key={pathname} className="page-transition">
+          <Outlet />
+        </div>
       </main>
       {showFloat && <FloatingAssistant />}
     </div>
   )
 }
+

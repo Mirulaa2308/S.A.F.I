@@ -29,7 +29,7 @@ export default function Nav() {
 
   const activeCls = 'border-b-2 border-cyan-400'
   const linkCls = (isActive: boolean) =>
-    `text-sm font-sans-ui pb-1 transition-colors ${isActive ? 'text-white border-b-2 border-cyan-400' : 'text-blue-200 hover:text-white'}`
+    `relative text-sm font-sans-ui pb-1 transition-all duration-200 nav-link-hover ${isActive ? 'text-white nav-link-active' : 'text-blue-200 hover:text-white'}`
 
   const currentLang = LANGUAGES.find((l) => l.code === lang)!
 
@@ -72,7 +72,7 @@ export default function Nav() {
           <div className="relative" ref={langRef}>
             <button
               onClick={() => setLangOpen(!langOpen)}
-              className="flex items-center gap-1.5 text-xs font-sans-ui px-3 py-1.5 rounded border transition-colors hover:bg-white/10"
+              className="flex items-center gap-1.5 text-xs font-sans-ui px-3 py-1.5 rounded border nav-ghost-btn"
               style={{ borderColor: 'rgba(255,255,255,0.2)', color: '#90bbea' }}
             >
               <span>🌐</span>
@@ -109,7 +109,7 @@ export default function Nav() {
 
           <NavLink
             to="/assistant"
-            className="flex items-center gap-1.5 text-xs font-sans-ui px-3 py-1.5 rounded border transition-colors hover:bg-white/10"
+            className="flex items-center gap-1.5 text-xs font-sans-ui px-3 py-1.5 rounded border nav-ghost-btn"
             style={{ borderColor: 'rgba(255,255,255,0.2)', color: '#90bbea' }}
           >
             <span>✦</span> SAFI
@@ -117,7 +117,7 @@ export default function Nav() {
 
           <NavLink
             to="/login"
-            className="text-xs font-sans-ui px-3 py-1.5 rounded border transition-colors hover:bg-white/10"
+            className="text-xs font-sans-ui px-3 py-1.5 rounded border nav-ghost-btn"
             style={{ borderColor: 'rgba(255,255,255,0.2)', color: '#90bbea' }}
           >
             {t('login', lang)}
@@ -125,7 +125,7 @@ export default function Nav() {
 
           <NavLink
             to="/search"
-            className="text-xs font-sans-ui font-medium px-4 py-2 rounded transition-opacity hover:opacity-90"
+            className="text-xs font-sans-ui font-medium px-4 py-2 rounded nav-cta-btn"
             style={{ background: '#0077b6', color: 'white' }}
           >
             {t('findMyScheme', lang)}
